@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: "italics";
+        src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "variable";
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "extrabold";
+        src: url("./assets/fonts/static/Figtree-ExtraBold.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "medium";
+        src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+      }
+      body {
+        font-family: "variable", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f8c850] flex justify-center items-center">
+    <div class="bg-white rounded rounded-3xl shadow-[5px_5px_0_black] m-25 p-2">
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="illustration"
+        class="rounded-3xl p-4"
+      />
+      <div class="mx-4 flex flex-col justify-center items-start">
+        <div class="bg-[#f8c850] px-3 py-1 my-2 rounded rounded-l font-extrabold">
+          <p>Learning</p>
+        </div>
+        <p class="my-2 font-variable">Published 21 Dec 2023</p>
+        <p class="my-2 font-extrabold text-2xl">HTML & CSS foundations</p>
+        <p class="my-2 text-[#999998]">
+          These languages are the backbone of every <br />
+          website, defining structure, content, and <br />
+          presentation.
+        </p>
+      </div>
+      <div class="flex justify-left items-center">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="illustration"
+          class="rounded-3xl p-4 w-15"
+        />
+        <p class="font-extrabold">Greg Hooper</p>
+      </div>
+    </div>
+  </body>
+</html>
